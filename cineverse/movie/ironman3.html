@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Man 3 - CineVerse</title>
+<link rel="icon" type="image/jpeg" href="../1.jpg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Only OTT Box Hover */
+.ott-box {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ott-box:hover {
+    transform: scale(1.05);
+}
+
+.ott-logo {
+    width: 180px;
+    height: 60px;
+    object-fit: contain;
+    background-color: transparent;
+    display: block;
+}
+
+.actor-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.actor-modal-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.actor-modal-works span {
+    display: block;
+    margin-bottom: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #fff;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../movies.html">Movies</a>
+      <a href="../series.html">Series</a>
+      <a href="../anime.html">Anime</a>
+      <a href="../kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+
+<div class="container">
+
+  <!-- Movie Title -->
+  <div class="movie-title"><h4>Iron Man 3</h4></div>
+
+  <!-- Movie Info -->
+  <div class="movie-info">
+    <div class="info-box"><span>Release Date: May 3, 2013</span></div>
+    <div class="info-box"><span>Duration: 2h 10m</span></div>
+    <div class="info-box"><span>Director: Shane Black</span></div>
+    <div class="info-box"><span>Producer: Kevin Feige</span></div>
+  </div>
+
+  <!-- Main Content -->
+    <div class="main-content">
+    <div class="left-column">
+      <iframe src="https://www.youtube.com/embed/Ke1Y3P9D0Bc" allowfullscreen></iframe>
+
+     <!-- Mobile responsive wrapper -->
+    <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/Ke1Y3P9D0Bc" allowfullscreen></iframe>
+    </div>
+
+    </div>
+    <div class="right-column">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjIzMzAzMjQyM15BMl5BanBnXkFtZTcwNzM2NjcyOQ@@._V1_.jpg" alt="Iron Man 3 Poster">
+    </div>
+  </div>
+  <!-- Genres -->
+  <div class="genres">
+    <button>Action</button>
+    <button>Adventure</button>
+    <button>Sci-Fi</button>
+    <button>Superhero</button>
+    <button>Thriller</button>
+  </div>
+
+  <hr>
+
+  <!-- Description -->
+  <div class="description">
+    <p><strong>⭐ Rating:</strong> 7.1 / 10</p>
+    <p><strong>Description:</strong> Tony Stark faces his most powerful enemy yet — the Mandarin — while grappling with the trauma of the events in New York (The Avengers). When his world is torn apart by terrorists, Stark embarks on a journey of survival and discovery, relying on his intelligence and ingenuity without his full arsenal of suits.
+    <br><br>
+    Alongside Pepper Potts and James Rhodes, Stark must uncover a dangerous conspiracy involving the Extremis virus. The film combines high-stakes action with Tony’s personal struggle, testing what defines the man inside the armor.
+    <br><br>
+    Iron Man 3 explores themes of identity, resilience, and heroism, while delivering thrilling battles, emotional depth, and a fresh perspective on the Marvel Cinematic Universe.</p>
+  </div>
+
+  <!-- Streaming Section -->
+  <div class="streaming">
+      <h3>Streaming On:</h3>
+      <div class="ott-box">
+          <img class="ott-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney Plus Logo">
+      </div>
+  </div>
+
+  <hr>
+
+  <!-- Actors Section -->
+<!-- Actors Section -->
+<section class="actors">
+  <h3>Main Cast</h3>
+  <table class="actor-table">
+    <tr>
+      <th>Actor</th>
+      <th>Name</th>
+      <th>Action</th>
+    </tr>
+
+    <!-- Robert Downey Jr. -->
+    <tr>
+      <td><img src="data:image/jpeg;base64,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" alt="Robert Downey Jr."></td>
+      <td>Robert Downey Jr.</td>
+      <td>
+        <button class="genres-btn" onclick="showActor(
+          'Robert Downey Jr.',
+          'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAL0AfgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAgMEBgcBAP/EADsQAAEDAwIDBQYEBQMFAAAAAAECAxEABCESMQVBUQYTImFxMoGRobHBFNHh8AcVI0JiUnKyJDM0c4L/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAKhEAAgIBBAEDAgcBAAAAAAAAAAECEQMEEiExURMiQTJxBRUjYYGC8BT/2gAMAwEAAhEDEQA/AJ+vVBiTXtlya9GRERFe8K4jOa5x70SQTkbTXt+VeII359K4knlUCPHFdSTz35V4yTimrh9u3YW8+rQhCSSZqEb45H4mmTdMCZfRAMGFTnpVYv8AjTl6tllo93bqBW51VmEpPrvHnVfvuKOv3AZZUENpxI2A6CmKF9nKzfiUYuoKzQTxW3CSS6lAHI5J+1Kt+JsuK0FUHzn8qoTPE27eENEKWYCnFCY9KYPGRrUoFazJCVEx7/pRekjL+aTT5SNQQtCvZUFeYNKid6zmx4mlkFbTimzzXOT+fvo/wzjzrzmjTdvnJ0pZTgesiglBxN2DXQyuumWmkq286jW1+xcHS0sFQ3HMVIMziKA2rkQZk86WnpGOVeKedNkFXh571AuxZI6SmKQlZAJjc0nVJOB0rx5DpVF0dJ1Z2rkHevVx15thpbryghAGTFWW+DpOJqpdubtxDDTCZ0KVJHX9xT952qYGoW6T6qH6ihBW/wAeuW2R/UM4CU4FHGLu2c3VazG8coRfICb7/UdKjJ0qBB3Kf0NJVYXTrvettLIJyIrUOG9k7NhKFuo1rHKTAo61wtlAAbZSkdIo3k8HHWC+2Yq3wy9QlRWyr7ioVww+25pU2pIAgSMVvx4ayUkd2AD5VDueA2VwkpXboIPlVerRT0/hmGt3a2jhInrRPhl6CqFwQT7E71cuPdg2e6UuyQErGw5VnbrdzYXCmijQ4kwZ3pikpinGWJ2aZwjiNqGUNBpttQwNCflijiFyJMRFZdwm4WkA3jaij/XpJA88Tj3VeeC3aHUlgFskJlJREKHUUqcNrO1oNZ6n6cgylYPP3VwqMyE71xoeHYV0phXWlnV4s4ACZBxXlkjeCTyqKp5KcZ3pC3SrCTQ2GoMllQ5Y6zVa7dXrlrwlpDKoU+7pKgdgAZ+1FgtSBkUA7YhDlmx3k6EO6lRucGPrRQfuRn1kWsEmmVK1BedQkySowMVpvZPhbdnb95ALrm6ucdKz/s+0LniAKEpSkHbeK1bhnhQhH2p2R/B53BG22GbdsadqlpQIqM0eQqSJjnQDRXd5mvFsbxXdRiveLnUKI7zQKZrN+3vBG1OfiGkQpXtVpy8iq/2gtythQKdSSKFOpWVJbo0Y7bl+0VLE+HcaiZ9xkUb4Bf2y7xpS0llwLEwTAnfFRuIgWd0pQRoPTr++lDFpi8ZUwI71YiNpJp0vcjNibhNNGsK8KdOxnMUtPiEzTSlYjkBE9a4lQIjp0pB62uAcqSqem1cBPPpmOdKOrHQU0TnT9aA0D7i0zkj31Vu2TneWLYSfD3gJI9DU+4fU84Y9kcqg8VZNzYOIEzokeoFFHhozalb8UorwCuyMm58JzIEVrNg1/TaIB2G1Zf2atLrhzqVXLSmTcAKamJKYmfmKsS7p9V4hVvdLtRbwv8QD45/3HNHka38nnsEX6drsvaL+ybWUqu7cKThQU4AQamC7a0EjWoYEpQo7nyFZI5ZcMYue8TxO8beSclD4SoT6mR8qPcPKXru3asA2SEABC0K9pIGTqJMnJkGPKpuVEqV8l5uOK2VtLj7wQif7gR9qGXHbns/bnQu/GvUUlOg4Ijf98jQHtHauvX6m7q3aQCkLP4efGdoI8oHxHSqq/wDy61UT+CCm0qCSYSYJ6lRAH251N6uqI8bcd10aha9p+D3qlIZu06kmMA59PyqRd6Lhk6SlaTiQZFZ7YcV4c+yi2ZUhCEqKkoSkAoUYBOCQoYTkEj41Z+EcQKQW3EreK29WqYI0kDp/lv5ClylbroKMGlfZn/bJo29+ckIUNvnUPsxbC+vbYLOLdfefAj9KPdvQy4dbtpdBek6XEupCQfNOmTvyNDuwVvcE3T+j+iNKVKPInI+lOv2WBp4KWqUX0XgV7Y/emm5AJ399OK3zFJPTtA89DvSVQQUiQTiumQvekuHwOHnpxVDGBlQCUnl0O9dUYBgUlQx767BFEJAnBLB63uytwaVKJXHQSR9Y+NWK64c7coCELU3J1SKcsbVLty08SdOlaDHWAQfn8qMtMOEAFs4/uCgQM+4z7ozVZG27RxljWLdB9WVm04Ki2cU4lt1BwSNZCVEbE9euTVr7I2KmuKOOqCUoDYhInB+07/CmmrW5uF+FBCQR41kEe6KsXBENt6wHBqOZPMVIOTfuF5IwivaM9oLTW83dDK20lJxODv8AT5VXnuGd4pSXY1Ez4hg1eHEIWsgKCsZg0IuOFPZFqEEScHMeQyI/eKqcXdomKaSpga04dbtJAcZbcII0wkCPdRvhtogFbxjAKBjqQT9E1634Q/rJcOhHIADV5Zk/SiSEJaaCEJCUJGB++dUoPtlTmnxEpfbO37y5tGley66hvA/1GD9RROz7P23CLcptwqXGV6lKxqiVCfSPnRDiPDkcQftFK3adSueeDI+YFP3mhuwdSFGG5SJMkSmPqaNPgrFxkVFcyDiSOYpaFCPENsV4AZMcq82cbH4UJ6Jg8YBiZ+E14okeo3HpXJ2BxXdcc4jpUCApA1EbicVzaB8adu9KXyBt96amZkxjaiFBjgxT+EeTGQ4CD6irDY6Bp1JCioYkVVOFXIZcW2tUIcAz5jb7irHbEgpAPsmqZzNTF7mGL1tTjbbbc6VnxEf6ef5e+q+5wriaL91drf6W3BhtacJPkftRu8vkMhImVq8KEzHnQr+aWzj6w5fNgxpPdyUj9fMU1IwbpPiKJTPDLxxVu69xBwKaiW0EhBPmBE++aPlKkpStskqSIP8AkKr9pfsoKgu/1qMxpQSAJ8vfyqZ/OWWkAqebWI3mB61biC3NfUgyFhTcjIIpg5T5VxhwXLXetkFKgFCDifKlOkJ8NBIuyOVaVoiQZ3gn5UzxhpNrwtQCvE6sZOCoyDPkMVD4pxN2wubVTKEr1uHWFf6ADPz0/GoPEeIO8ReDjoCUI9hCdh+tAnSNuk085zU/hDScQNwaeQkpEkGfKo6VRnoKlBY0yMVEdidgnTJ04pq6WW0GCQdUA07srHlXFhBScZNUHXAJvCRpSIAHSmsRPxqRepiCN9s1GjE5nlRIVLs6tJSQfoKs/DrkOtocOy058jzqslRIAO0QKn8OfLAAV7JM+nnUZm1OPdC18Fju2mbpTc6VtlPiSo4Jz8q7b67eUNWqCBO2wHoKb4Y404laBpIJkCc/Ki6NDYCgJEcuf60cbOM+OiMp26Q4nRbtwowRpyn30TbASkqWZJzEbUlstoA2SSMwKdQWymVBInIopWB9xpCjb6ghJ0KyAeXpXFrC9SiYCfhUO+vwXUhtUJScRzptorfPiTCBk/alstfsQ+LpCiy4oblSRO4Hh/KoKdgCDRLjZ09wgRMKJ+VDk6tQ+cUB6DR8YUKkY5k0+0dSRTBnBkYPMU63AQBUQ+XRGRaXLqblxthRRb5eIzo3GfgaSu2dQwi4W0e6WopSs/3EbirBwi8VYNcfumkpUptxqUqyFJ7xQI94J+Nd46xb/wAi4f8AywlTDtwtTSDujUB4D5g4p3prbf8AuzCtZNZVBri0r/rbKrf8PuEWCLxbK0sLUQlZHhUROB8D8KFqYeSwi4U0sMrUUpcKfCojcA1pvGLVq44bxDg7V4y5+HtEhm3QTrS41KlHaJVJG/Sqsjh11xHsfYIsLdx8ou3CdAmBBzRPFXCEw1+9Jy45r+GrRWEicAHPQb1MQQlxGMAjcU0yhaDOQQYg8qdUCocpJiaQzpVaJSm3LR/vbZUf4navPcdcUQC4lsAZSrapjAF1bJIyFAQRTCez1ndu6rpSp9d6NSaPPZIo412lbUsBS/ClJBIVMxyiaeZ40q+PcMLkCNROSR5j7miNr2I4SWAXklxMykHbaKlWvZ+xtF6rNGiBEAUTk6FJKxFpaQkFSZUTMnNEwlLTcxAGTmKWy1obJVuMVSP4gcf0p/lNovxqzcKB2TyT7+fl61UYbnRJTUVZ2z423xXtM+yVarZxHdskHcpk6h6yo+kUVftXLaSqFI5Gs94G/wBxxazc59+hPxMH61rxAUkSkEHqKbPEitLr8mGXleCuE+1O3KnUDwAGp9xw5K5U0dGZI5H8qjqtXkmCnHlSHBo72LXYMsb3V9wMmNyBAOK6NUe/epF3w67s29VwwppKjpSpUHOTiowUAAfSlqSatGqMozVxdo8VGT4iORINC233bZ0pQ44kJJwFkCjCGXHElTaZSCATIGeVJPCHLh4L7wIScExNMipPoz5s+GH1NEBEqKO7BUTtHOpirbuLZ19+P6aCtQ5CBMUVtbFmybhsalx7Sjmg/bV82XZ1aZ/qXTgb9RufkKdDFXZydV+JOSax8Ii9gL8u2f4V5RK2lY8wc/Wat7jA7xJiQoYxNZR2fvV2V6h1HoR1/ea1/h7jd/aNPNEEESI385FTJHkx4clxrwSbFTiUBJEpGKkFJSValHOdIpttAAM5INeefQ2nUpQSlAkkkAAUFDLBfajjTfBeGqewXleFpHVR/c1kLjrj7y3nllbjiipSjzJon2l4yeOcSU+2qbVuUsgdOZ9/5UKitOOG1GLLk3PjoftVFN0wobh5H/IVtDclG1Yowf8Aqbfr3yP+QrbWxjPwomJvk9pzk02pGetPmNwPWkqQT5UNF2R+17jVxbM2zTiFupeClJBnSNJ36bigDHDRhSpUeVEWmEgGB8qkGE4Ak8hWfBpo4obezb/2ZIw9ODpEVu11HSTCRuBipRSEAAJhI6U4hOhPU864qDkitFGZybfIyEavFseVUD+Jd2XOKWVgk+Bhkuq/3KMD5A/GtFbRqWAT+lY92tuxcdpuJvkyhL3dJ/8AkaY+INWgJsgNvIZIU4sIBOCetab/AA+vlHW0T/TJ1J6A1kDiXHXdahtsOQq//wAMeJpVeucOeSltawpbETAjdOZOBt6GqyLgLBP30zVXy2ZOrIzWb/xB4w488ODWjyGmynVcLUsJGchMz0yesgVe3telMbg5HXFZF2rfad45duW6u8lQClctQABA94peNXI0Z21Dgrpact1d7bq9YGDU61uk3AiNLg3R+VJYaU6uVZOwFTFcPaWpRkp7se2nBn9/Wnt0Yox8HbRM31oAN7hv/kK29KTEdKxnhLKvx/D9RkquWcxH94rZwISMTVdltUdgTSDG2acJEUgyRiKhQNjSORx1pbCdX9Q+YH51Gfd7tEqBI5wOX7mpbK0LbSppQKSMHyqhgogZmm1b86ckbUgeRz16VCDjWpOowJjnyrDH2e9u3nXFaip9S56yqZrbbp5NtYXL6iAGmVuE8hCSaxxptXcp1ZMCT51aBq2NLY0OAAczFMNl21uUP2rimn2lBba07pNFXW9ek86jXluf+4kbb1LLlEt7nbpN52cdx3HE4DakpGM/3p8oHuMetUZI8CRtipNjZoetrh9x/uW2oBV3ZXkgxIGR7JzBqO3JSOsVail0VKbl2S7EQS5G3s1OWiLZDQ9pxWaatWYQkdakgarpIP8AaDihYcVwTOCtBzjVk3GC/PuSCftWpoJgZJTtHMVmHZohXaOwSDkLXI6eBVainYDpvNRAT7PYI8ImvBPWulMmcpNc1clDbmkT8qIAEuIC0QROaGhTtg4pbMrZJ8Tc7eY8/wB+dE4xPQ/amm0JUorI2O1ANRKbUFoC8iROcGK4s6ee1enYe6mlEqV0moUD+174tuyl+rm6gMjz1qCT8iazvRoaSDvFXf8AiKoo4Nw9pJ8Lt4NXmAhRj41TXxsKtkiJCCSBS7xkos3Ff4GnW0jVT3ER/wBC9/6z9KoZ8FY1uNtqShxaEuJ0rCVEBQ6HqKeYA7xtJ5mmHBhI6xTzf/lMjzNGzOuw+nSgI5ACTUEuJcuXXYMYgTEVKYJ75PpTraEy8opBIEjFAhzVj/ZFpSO0dkV7ysjOw7tVaonYbic1lXY9WrtLaTzK59dB/OtWTGmYo6FWdpsjNLP3pPL1qEP/2Q==',
+          [
+            'Known For: Iron Man series, Sherlock Holmes, Avengers',
+            'Birthdate: April 4, 1965',
+            'Nationality: American',
+            'Bio: Plays Tony Stark / Iron Man, a genius billionaire inventor who faces his biggest personal and external challenges.'
+          ]
+        )">View Info</button>
+      </td>
+    </tr>
+
+    <!-- Gwyneth Paltrow -->
+    <tr>
+      <td><img src="data:image/jpeg;base64,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" alt="Gwyneth Paltrow"></td>
+      <td>Gwyneth Paltrow</td>
+      <td>
+        <button class="genres-btn" onclick="showActor(
+          'Gwyneth Paltrow',
+          'data:image/jpeg;base64,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',
+          [
+            'Known For: Iron Man series, Shakespeare in Love, Avengers',
+            'Birthdate: September 27, 1972',
+            'Nationality: American',
+            'Bio: Plays Pepper Potts, Tony Stark’s partner and CEO of Stark Industries, who plays a crucial role in the battle against Extremis.'
+          ]
+        )">View Info</button>
+      </td>
+    </tr>
+
+    <!-- Don Cheadle -->
+    <tr>
+      <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvWWhtpvNh_rYbMWKeTuDJQWpv-xh_fRNis1GpvsoaOwMM1rD9eXjYH4Ml70mfiryf4eP_kPhZ-4XP2V_hBe4oM6cOouk_TboBQV6DACroqw" alt="Don Cheadle"></td>
+      <td>Don Cheadle</td>
+      <td>
+        <button class="genres-btn" onclick="showActor(
+          'Don Cheadle',
+          'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvWWhtpvNh_rYbMWKeTuDJQWpv-xh_fRNis1GpvsoaOwMM1rD9eXjYH4Ml70mfiryf4eP_kPhZ-4XP2V_hBe4oM6cOouk_TboBQV6DACroqw',
+          [
+            'Known For: Hotel Rwanda, Iron Man series, Avengers',
+            'Birthdate: November 29, 1964',
+            'Nationality: American',
+            'Bio: Plays James Rhodes / War Machine (Iron Patriot), Tony Stark’s close friend and armored ally.'
+          ]
+        )">View Info</button>
+      </td>
+    </tr>
+
+    <!-- Ben Kingsley -->
+    <tr>
+      <td><img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSsDLTLAbbjdWGHxVXH1fqAxvDuY_6_4ao9Efhv7QN1fm6k6l6kEltC3tP2TlTybkRoRzowW416D1St-HLeeA5dMymnlllT5HZ01a8VMqYheIj8ZV-GDqvgxliLQ-C7xjnY-MkdDYhLZ_fs" alt="Ben Kingsley"></td>
+      <td>Ben Kingsley</td>
+      <td>
+        <button class="genres-btn" onclick="showActor(
+          'Ben Kingsley',
+          'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSsDLTLAbbjdWGHxVXH1fqAxvDuY_6_4ao9Efhv7QN1fm6k6l6kEltC3tP2TlTybkRoRzowW416D1St-HLeeA5dMymnlllT5HZ01a8VMqYheIj8ZV-GDqvgxliLQ-C7xjnY-MkdDYhLZ_fs',
+          [
+            'Known For: Gandhi, Schindler’s List, Iron Man 3',
+            'Birthdate: December 31, 1943',
+            'Nationality: British',
+            'Bio: Plays Trevor Slattery / The Mandarin, an actor who becomes the face of a terrifying terrorist plot.'
+          ]
+        )">View Info</button>
+      </td>
+    </tr>
+
+  </table>
+</section>
+
+</div>
+<!-- Modal -->
+<div id="actorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('actorModal').style.display='none'">&times;</span>
+    <img id="actorImg" class="actor-modal-img" src="" alt="">
+    <div id="actorName" class="actor-modal-name"></div>
+    <div id="actorWorks" class="actor-modal-works"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 CineVerse | Designed Hotstar-style</p>
+</footer>
+
+<script>
+function showActor(name, img, infoLines) {
+    const modal = document.getElementById('actorModal');
+    document.getElementById('actorName').innerText = name;
+    document.getElementById('actorImg').src = img;
+    document.getElementById('actorWorks').innerHTML = infoLines.map(line => `<span>${line}</span>`).join('');
+    modal.style.display = "block";
+}
+window.onclick = function(event) {
+    const modal = document.getElementById('actorModal');
+    if (event.target == modal) modal.style.display = "none";
+}
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interstellar - CineVerse</title>
+<link rel="icon" type="image/jpeg" href="../1.jpg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  .ott-logo {
+      width: 180px;      /* Rectangle width */
+      height: 60px;      /* Rectangle height */
+      object-fit: contain; /* Keep aspect ratio */
+      background-color: transparent; /* Ensure no background */
+      display: block;
+  }
+  .streaming {
+      margin: 20px 0;
+  }
+  .streaming h3 {
+      color: #66c2ff;
+      margin-bottom: 10px;
+  }
+  .ott-box {
+      display: inline-block;
+      cursor: pointer;
+      transition: transform 0.3s;
+  }
+  .ott-box:hover {
+      transform: scale(1.05);
+  }
+
+  .actor-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.actor-modal-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.actor-modal-works span {
+    display: block;
+    margin-bottom: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #fff;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../movies.html">Movies</a>
+      <a href="../series.html">Series</a>
+      <a href="../anime.html">Anime</a>
+      <a href="../kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+<div class="container">
+
+  <!-- Movie Title -->
+  <div class="movie-title"><h4>Interstellar</h4></div>
+
+  <!-- Movie Info -->
+  <div class="movie-info">
+    <div class="info-box"><span>Release Date: November 7, 2014</span></div>
+    <div class="info-box"><span>Duration: 2h 49m</span></div>
+    <div class="info-box"><span>Director: Christopher Nolan</span></div>
+    <div class="info-box"><span>Producer: Emma Thomas, Christopher Nolan, Lynda Obst</span></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="left-column">
+      <iframe src="https://www.youtube.com/embed/zSWdZVtXT7E" allowfullscreen></iframe>
+
+           <!-- Mobile responsive wrapper -->
+    <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/zSWdZVtXT7E" allowfullscreen></iframe>
+    </div>
+
+    </div>
+    
+    <div class="right-column">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngBJ0B7UDrLUkDlp6DCQLsEYuWR-DiHwbnxFFCniB3HiP3f3NZmR1-lKSC34ge6YXu4LX" alt="Interstellar Poster">
+    </div>
+  </div>
+
+  <!-- Genres -->
+  <div class="genres">
+    <button>Adventure</button>
+    <button>Drama</button>
+    <button>Sci-Fi</button>
+    <button>Thriller</button>
+    <button>Space</button>
+  </div>
+
+  <hr>
+
+  <!-- Description -->
+  <div class="description">
+    <p><strong>⭐ Rating:</strong> 8.6 / 10</p>
+    <p><strong>Description:</strong> In a future where Earth is becoming uninhabitable, a team of explorers travel through a wormhole near Saturn to find a new habitable planet for humanity. Cooper, a former NASA pilot, joins the mission leaving his family behind. The film explores time dilation, survival, and the emotional bonds between family members. Expect stunning visuals, scientific concepts, and emotional storytelling.</p>
+  </div>
+
+<!-- Streaming Section -->
+<div class="streaming">
+    <h3>Streaming On:</h3>
+    <div class="ott-box">
+        <img class="ott-logo" 
+             src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+             alt="Netflix Logo">
+    </div>
+    <div class="ott-box">
+        <img class="ott-logo" 
+             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJaEy2QJxv5SuU56kyq5-7P4DNh4piysR6A&s" 
+             alt="Amazon Prime Video Logo">
+    </div>
+    <div class="ott-box">
+        <img class="ott-logo" 
+             src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" 
+             alt="Disney Plus Logo">
+    </div>
+</div>
+
+<style>
+.streaming {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.streaming h3 {
+    color: #66c2ff;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.ott-box {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ott-box:hover {
+    transform: scale(1.05);
+}
+
+.ott-logo {
+    width: 180px;      /* Rectangle width */
+    height: 60px;      /* Rectangle height */
+    object-fit: contain; /* Keep logo aspect ratio */
+    background-color: transparent; /* No background */
+    display: block;
+}
+</style>
+
+
+  <hr>
+
+  <!-- Actors Section -->
+  <section class="actors">
+    <h3>Main Cast</h3>
+    <table class="actor-table">
+      <tr>
+        <th>Actor</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+
+      <!-- Matthew McConaughey -->
+      <tr>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UfNd4IoqyZmt5iXV10COOV7hsorMGQKTyMpYx-FxRrzpNwUNNF_-92aL8LpSjzzhou3swk1f9cm0hPUVhhON8QqdivgEu1GGHgbCmfUydw" alt="Matthew McConaughey"></td>
+        <td>Matthew McConaughey</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Matthew McConaughey',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UfNd4IoqyZmt5iXV10COOV7hsorMGQKTyMpYx-FxRrzpNwUNNF_-92aL8LpSjzzhou3swk1f9cm0hPUVhhON8QqdivgEu1GGHgbCmfUydw',
+            [
+              'Known For: Interstellar, Dallas Buyers Club, The Lincoln Lawyer',
+              'Birthdate: November 4, 1969',
+              'Nationality: American',
+              'Awards: Academy Award for Best Actor',
+              'Bio: Plays Cooper, a former NASA pilot leading the mission to find a new habitable planet.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Anne Hathaway -->
+      <tr>
+        <td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjVjG9PwfL_OKL89wiEuQMRJKD1uVyu6QYslsxWoCoh3jr6pXdU8t8d6eewfUBzMzgf3Aaf-pBJCJyw6jBRSXHd6Yr2M6Xk8nNBRT8jpKPKA" alt="Anne Hathaway"></td>
+        <td>Anne Hathaway</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Anne Hathaway',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjVjG9PwfL_OKL89wiEuQMRJKD1uVyu6QYslsxWoCoh3jr6pXdU8t8d6eewfUBzMzgf3Aaf-pBJCJyw6jBRSXHd6Yr2M6Xk8nNBRT8jpKPKA',
+            [
+              'Known For: Interstellar, The Devil Wears Prada, Les Misérables',
+              'Birthdate: November 12, 1982',
+              'Nationality: American',
+              'Awards: Academy Award for Best Supporting Actress',
+              'Bio: Plays Dr. Amelia Brand, a scientist and astronaut on the mission.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Jessica Chastain -->
+      <tr>
+        <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkhorvVH5dxzLepX_teLlUE4vbvYngDKm99LUWQZrXR8AdMlLwmTRQ4zoOxFrqge36Oc4V9PGnxh_qtqvsQAI3ylcvP0zXwvA9TwrHu-RT" alt="Jessica Chastain"></td>
+        <td>Jessica Chastain</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Jessica Chastain',
+            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkhorvVH5dxzLepX_teLlUE4vbvYngDKm99LUWQZrXR8AdMlLwmTRQ4zoOxFrqge36Oc4V9PGnxh_qtqvsQAI3ylcvP0zXwvA9TwrHu-RT',
+            [
+              'Known For: Interstellar, Zero Dark Thirty, Molly\'s Game',
+              'Birthdate: March 24, 1977',
+              'Nationality: American',
+              'Bio: Plays Murphy Murph Cooper, Cooper’s daughter, a brilliant scientist.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Michael Caine -->
+      <tr>
+        <td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNI2hOLTfZ7uUdEczsNUyBvTNUIfhg4-VPejyetGPp5cbW7qLdfuiLDLzMJbT6YP885iKqXgI4tpAZYCIVSOF-F-xDR_wDpPD6GPKd_KEf" alt="Michael Caine"></td>
+        <td>Michael Caine</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Michael Caine',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNI2hOLTfZ7uUdEczsNUyBvTNUIfhg4-VPejyetGPp5cbW7qLdfuiLDLzMJbT6YP885iKqXgI4tpAZYCIVSOF-F-xDR_wDpPD6GPKd_KEf',
+            [
+              'Known For: Interstellar, The Dark Knight Trilogy, The Prestige',
+              'Birthdate: March 14, 1933',
+              'Nationality: British',
+              'Bio: Plays Professor Brand, Cooper’s mentor and NASA scientist.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Matt Damon -->
+      <tr>
+        <td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdwhUUPnTxr5UxZPsqUNB7M5Ayqx8HWMERYDddGH9VWcPVcfTv37dKp2EGR11nNezofYnslAsWdBiP2yAXlvFOBwkFh6vYkndVgbCLHtHM" alt="Matt Damon"></td>
+        <td>Matt Damon</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Matt Damon',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdwhUUPnTxr5UxZPsqUNB7M5Ayqx8HWMERYDddGH9VWcPVcfTv37dKp2EGR11nNezofYnslAsWdBiP2yAXlvFOBwkFh6vYkndVgbCLHtHM',
+            [
+              'Known For: Interstellar, The Martian, Good Will Hunting',
+              'Birthdate: October 8, 1970',
+              'Nationality: American',
+              'Bio: Plays Dr. Mann, a scientist stranded on another planet.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+    </table>
+  </section>
+
+  <hr>
+</div>
+
+<!-- Modal -->
+<div id="actorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('actorModal').style.display='none'">&times;</span>
+    <img id="actorImg" class="actor-modal-img" src="" alt="">
+    <div id="actorName" class="actor-modal-name"></div>
+    <div id="actorWorks" class="actor-modal-works"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 CineVerse | Designed Hotstar-style</p>
+</footer>
+
+<script>
+function showActor(name, img, infoLines) {
+    const modal = document.getElementById('actorModal');
+    document.getElementById('actorName').innerText = name;
+    document.getElementById('actorImg').src = img;
+
+    const html = infoLines.map(line => `<span>${line}</span>`).join('');
+    document.getElementById('actorWorks').innerHTML = html;
+
+    modal.style.display = "block";
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('actorModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+
+</body>
+</html>

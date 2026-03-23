@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inception - CineVerse</title>
+<link rel="icon" type="image/jpeg" href="../1.jpg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    .ott-logo {
+    width: 180px;      /* Rectangle width */
+    height: 60px;      /* Rectangle height */
+    object-fit: contain; /* Keep aspect ratio */
+    background-color: transparent; /* Ensure no background */
+    display: block;
+}
+
+.actor-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.actor-modal-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.actor-modal-works span {
+    display: block;
+    margin-bottom: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #fff;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../movies.html">Movies</a>
+      <a href="../series.html">Series</a>
+      <a href="../anime.html">Anime</a>
+      <a href="../kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+<div class="container">
+
+  <!-- Movie Title -->
+  <div class="movie-title"><h4>Inception</h4></div>
+
+  <!-- Movie Info -->
+  <div class="movie-info">
+    <div class="info-box"><span>Release Date: July 16, 2010</span></div>
+    <div class="info-box"><span>Duration: 2h 28m</span></div>
+    <div class="info-box"><span>Director: Christopher Nolan</span></div>
+    <div class="info-box"><span>Producer: Emma Thomas, Christopher Nolan</span></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="left-column">
+      <iframe src="https://www.youtube.com/embed/YoHD9XEInc0" allowfullscreen></iframe>
+                
+    <!-- Mobile responsive wrapper -->
+    <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/YoHD9XEInc0" allowfullscreen></iframe>
+    </div>
+
+    </div>
+    <div class="right-column">
+      <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="Inception Poster">
+    </div>
+  </div>
+
+  <!-- Genres -->
+  <div class="genres">
+    <button>Action</button>
+    <button>Adventure</button>
+    <button>Sci-Fi</button>
+    <button>Thriller</button>
+    <button>Mind-Bending</button>
+  </div>
+
+  <hr>
+
+  <!-- Description -->
+  <div class="description">
+    <p><strong>⭐ Rating:</strong> 8.8 / 10</p>
+    <p><strong>Description:</strong> Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction: stealing valuable secrets from deep within the subconscious during the dream state. Cobb's rare ability has made him a coveted player in corporate espionage but has also cost him everything he loves. He is offered a chance at redemption if he can accomplish the impossible — inception: planting an idea in someone's mind without them knowing. Expect visually stunning sequences, mind-bending twists, and intense emotional stakes.</p>
+  </div>
+
+  <!-- Streaming Section -->
+  <div class="streaming">
+    <h3>Streaming On:</h3>
+ <div class="ott-box">
+ <img class="ott-logo" 
+     src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+     alt="Netflix Logo">
+</div>
+
+  </div>
+
+  <hr>
+
+  <!-- Actors Section -->
+  <section class="actors">
+    <h3>Main Cast</h3>
+    <table class="actor-table">
+      <tr>
+        <th>Actor</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+
+      <!-- Leonardo DiCaprio -->
+      <tr>
+        <td><img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQcbqOH4dzt57bdZ0K36CHrRkhqgtGgwIrA7mHoA4M0cc8x239pMR-h28FlqERzrqW0GVMn1-Ok_LD0-KjYHnQCBki8Hqr50uPbUiPTn5UAhNDJa9Mtu-dp2JjcSYYNptQ97eLLy6_0DFEP" alt="Leonardo DiCaprio"></td>
+        <td>Leonardo DiCaprio</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Leonardo DiCaprio',
+            'https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQcbqOH4dzt57bdZ0K36CHrRkhqgtGgwIrA7mHoA4M0cc8x239pMR-h28FlqERzrqW0GVMn1-Ok_LD0-KjYHnQCBki8Hqr50uPbUiPTn5UAhNDJa9Mtu-dp2JjcSYYNptQ97eLLy6_0DFEP',
+            [
+              'Known For: Inception, Titanic, The Revenant',
+              'Birthdate: November 11, 1974',
+              'Nationality: American',
+              'Awards: Academy Award for Best Actor',
+              'Bio: Leonardo DiCaprio portrays Dom Cobb, a skilled thief who enters people’s dreams to steal secrets.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Joseph Gordon-Levitt -->
+      <tr>
+        <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWJ8ZFdiyJ4q1DS--Exro5Wg5aKhYnXb3Pf2dnjNOlesOq2Hrv15Vh4uIMyHC4DQP0-jdzcA5SkdCTL1ZhAFzhs_-g-SKjgW3NQjoNI84" alt="Joseph Gordon-Levitt"></td>
+        <td>Joseph Gordon-Levitt</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Joseph Gordon-Levitt',
+            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWJ8ZFdiyJ4q1DS--Exro5Wg5aKhYnXb3Pf2dnjNOlesOq2Hrv15Vh4uIMyHC4DQP0-jdzcA5SkdCTL1ZhAFzhs_-g-SKjgW3NQjoNI84',
+            [
+              'Known For: Inception, 500 Days of Summer, Looper',
+              'Birthdate: February 17, 1981',
+              'Nationality: American',
+              'Bio: Plays Arthur, Cobb’s right-hand man and a master of dream manipulation.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Ellen Page -->
+      <tr>
+        <td><img src="https://cdn.britannica.com/41/249341-050-E5F7039C/Actor-Elliot-Page-2022.jpg" alt="Elliot Page"></td>
+        <td>Elliot Page</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Elliot Page',
+            'https://cdn.britannica.com/41/249341-050-E5F7039C/Actor-Elliot-Page-2022.jpg',
+            [
+              'Known For: Inception, Juno, The Umbrella Academy',
+              'Birthdate: February 21, 1987',
+              'Nationality: Canadian',
+              'Bio: Portrays Ariadne, the architect who designs the dream worlds.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Tom Hardy -->
+      <tr>
+        <td><img src="https://hips.hearstapps.com/hmg-prod/images/9th-annual-ves-awards---red-carpet.jpg?resize=980:*" alt="Tom Hardy"></td>
+        <td>Tom Hardy</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Tom Hardy',
+            'https://hips.hearstapps.com/hmg-prod/images/9th-annual-ves-awards---red-carpet.jpg?resize=980:*',
+            [
+              'Known For: Inception, Mad Max: Fury Road, Venom',
+              'Birthdate: September 15, 1977',
+              'Nationality: British',
+              'Bio: Plays Eames, a charming forger who can manipulate dream identities.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Ken Watanabe -->
+      <tr>
+        <td><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo5gS_BFb5Dy0YhHmRLB3Ex5jl-sNq7b85A87_ii4xblPAYtmmK8AZ9Fsn_4kvdgVFS26PNoj9jFwP8WPkjkrCul3iitUxFwOVIKkNW_g" alt="Ken Watanabe"></td>
+        <td>Ken Watanabe</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Ken Watanabe',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo5gS_BFb5Dy0YhHmRLB3Ex5jl-sNq7b85A87_ii4xblPAYtmmK8AZ9Fsn_4kvdgVFS26PNoj9jFwP8WPkjkrCul3iitUxFwOVIKkNW_g',
+            [
+              'Known For: Inception, The Last Samurai, Godzilla',
+              'Birthdate: October 21, 1959',
+              'Nationality: Japanese',
+              'Bio: Plays Saito, the businessman who hires Cobb for inception.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+    </table>
+</section>
+
+<hr>
+</div>
+
+<!-- Modal -->
+<div id="actorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('actorModal').style.display='none'">&times;</span>
+    <img id="actorImg" class="actor-modal-img" src="" alt="">
+    <div id="actorName" class="actor-modal-name"></div>
+    <div id="actorWorks" class="actor-modal-works"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 CineVerse | Designed Hotstar-style</p>
+</footer>
+
+<script>
+function showActor(name, img, infoLines) {
+    const modal = document.getElementById('actorModal');
+    document.getElementById('actorName').innerText = name;
+    document.getElementById('actorImg').src = img;
+
+    const html = infoLines.map(line => `<span>${line}</span>`).join('');
+    document.getElementById('actorWorks').innerHTML = html;
+
+    modal.style.display = "block";
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('actorModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVerse - K-Drama</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="movie/style.css">
+  <link rel="icon" type="image/jpg" href="1.jpg">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="anime.html">Anime</a>
+      <a href="kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+
+  <!-- K-Drama Grid -->
+  <section class="section">
+    <div class="section-header">
+      <h2>All K-Dramas</h2>
+    </div>
+    <div class="cards">
+      <!-- 10 K-Drama cards -->
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/89/d9/e2/89d9e207e612a441b5085c7d7d4afad1.jpg" alt="K-Drama">
+        <h3>Crash Landing on You</h3>
+        <p>⭐ 8.7 | Romance, Drama</p>
+        <p class="desc">A South Korean heiress accidentally lands in North Korea and meets a soldier.</p>
+        <a href="kdrama/crashlandingonyou.html" class="view-btn">View</a>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/ee/8b/6f/ee8b6f1eb5680391a54e38096514eeb6.jpg" alt="K-Drama">
+        <h3>Itaewon Class</h3>
+        <p>⭐ 8.2 | Drama, Revenge</p>
+        <p class="desc">An ex-con opens a bar in Itaewon to seek revenge on a powerful food conglomerate.</p>
+        <a href="kdrama/itaewon.html" class="view-btn">View</a>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj0CsJssyKFJUPhUaNoFtrcv_OB6t28tolXQ&s" alt="K-Drama">
+        <h3>Goblin</h3>
+        <p>⭐ 8.6 | Fantasy, Romance</p>
+        <p class="desc">A goblin cursed with immortality seeks a bride to end his life.</p>
+        <a href="kdrama/goblin.html" class="view-btn">View</a>
+      </div>
+      <div class="card">
+        <img src="https://image.tmdb.org/t/p/original/fT7C1pt8eosHqATOGb8MnWQ5zHG.jpg" alt="K-Drama">
+        <h3>Vincenzo</h3>
+        <p>⭐ 8.3 | Crime, Comedy</p>
+        <p class="desc">A Korean-Italian mafia lawyer returns to Korea to fight corruption.</p>
+        <a href="kdrama/vincenzo.html" class="view-btn">View</a>
+      </div>
+      <div class="card">
+        <img src="https://image.tmdb.org/t/p/original/bD7DPVsOkCLzxz2mVSd73ISKdyg.jpg" alt="K-Drama">
+        <h3>Descendants of the Sun</h3>
+        <p>⭐ 8.0 | Romance, Action</p>
+        <p class="desc">A soldier and a doctor fall in love while working in a war-torn country.</p>
+        <a href="kdrama/descendants.html" class="view-btn">View</a>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNWJhMDNjMWUtMWM5NS00MGZlLWI2MWQtODMxYjZiYmFlZjgzXkEyXkFqcGc@._V1_.jpg" alt="Drama 5">
+        <h3>It's Okay to Not Be Okay</h3>
+        <p>⭐ 8.7 | Romance, Drama</p>
+        <p class="desc">A psychiatric ward worker meets a children's book writer with a dark past.</p>
+        <a href="kdrama/okaytonotbeokay.html" class="view-btn">View</a>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BZmFmYTU0YTItZTk4ZS00ZWMzLThmOTgtOGIyOTBkY2QwZjc0XkEyXkFqcGc@._V1_.jpg" alt="K-Drama">
+        <h3>Hotel Del Luna</h3>
+        <p>⭐ 8.4 | Fantasy, Romance</p>
+        <p class="desc">A cursed hotel owner serves wandering spirits with the help of a human manager.</p>
+        <a href="kdrama/hoteldel.html" class="view-btn">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CineVerse | Designed Hotstar-style</p>
+  </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+</body>
+</html>

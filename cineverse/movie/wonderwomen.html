@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wonder Woman - CineVerse</title>
+<link rel="icon" type="image/jpeg" href="../1.jpg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+<style>
+  .ott-logo {
+      width: 180px;
+      height: 60px;
+      object-fit: contain;
+      background-color: transparent;
+      display: block;
+  }
+  .streaming {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+  }
+  .streaming h3 {
+      color: #66c2ff;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+  .ott-box {
+      display: inline-block;
+      cursor: pointer;
+      transition: transform 0.3s;
+  }
+  .ott-box:hover {
+      transform: scale(1.05);
+  }
+
+  .actor-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.actor-modal-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.actor-modal-works span {
+    display: block;
+    margin-bottom: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../movies.html">Movies</a>
+      <a href="../series.html">Series</a>
+      <a href="../anime.html">Anime</a>
+      <a href="../kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+
+<div class="container">
+
+  <!-- Movie Title -->
+  <div class="movie-title"><h4>Wonder Woman</h4></div>
+
+  <!-- Movie Info -->
+  <div class="movie-info">
+    <div class="info-box"><span>Release Date: June 2, 2017</span></div>
+    <div class="info-box"><span>Duration: 2h 21m</span></div>
+    <div class="info-box"><span>Director: Patty Jenkins</span></div>
+    <div class="info-box"><span>Producer: Charles Roven, Zack Snyder</span></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="left-column">
+      <iframe src="https://www.youtube.com/embed/1Q8fG0TtVAY" allowfullscreen></iframe>
+
+           <!-- Mobile responsive wrapper -->
+    <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/1Q8fG0TtVAY" allowfullscreen></iframe>
+    </div>
+    
+    </div>
+
+    <div class="right-column">
+      <img src="https://media-cache.cinematerial.com/p/500x/fa9adeyq/wonder-woman-movie-cover.jpg?v=1500425006" alt="Wonder Woman Poster">
+    </div>
+  </div>
+
+  <!-- Genres -->
+  <div class="genres">
+    <button>Action</button>
+    <button>Adventure</button>
+    <button>Fantasy</button>
+    <button>Superhero</button>
+  </div>
+
+  <hr>
+
+  <!-- Description -->
+  <div class="description">
+    <p><strong>⭐ Rating:</strong> 7.4 / 10</p>
+    <p><strong>Description:</strong> Diana, princess of the Amazons, trained to be an unconquerable warrior. When an American pilot crashes on their island and tells of a massive conflict raging in the outside world, Diana leaves her home, convinced she can stop the threat. Fighting alongside men in a war to end all wars, Diana discovers her full powers and her true destiny.</p>
+  </div>
+
+  <!-- Streaming Section -->
+  <div class="streaming">
+    <h3>Streaming On:</h3>
+    <div class="ott-box">
+        <img class="ott-logo" src="https://flikover.tech/wp-content/uploads/2023/08/Amazon-Prime-Video-Group-Buy.png" alt="Disney Plus Logo">
+    </div>
+   
+  </div>
+
+  <hr>
+
+  <!-- Actors Section -->
+  <section class="actors">
+    <h3>Main Cast</h3>
+    <table class="actor-table">
+      <tr>
+        <th>Actor</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+
+      <!-- Gal Gadot -->
+      <tr>
+        <td><img src="data:image/webp;base64,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" alt="Gal Gadot"></td>
+        <td>Gal Gadot</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Gal Gadot',
+            'data:image/webp;base64,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',
+            [
+              'Known For: Wonder Woman, Fast & Furious, Batman v Superman',
+              'Birthdate: April 30, 1985',
+              'Nationality: Israeli',
+              'Bio: Plays Diana Prince/Wonder Woman, an Amazonian warrior with superhuman abilities.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Chris Pine -->
+      <tr>
+        <td><img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQhlt-6sOuMvZ2QR8F-0wrLCo9M2wHZbPtjD7fmicxaqdpgwSqQ2uvdtLvK0Hxd3jikDYQjQ-CBZtG3Txi5o7vov5B2cOZRogXiIuBvBzJfHDJiJXva3m4Lo6Ku6oYGySd1hQ5xdd27dRI" alt="Chris Pine"></td>
+        <td>Chris Pine</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Chris Pine',
+            'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQhlt-6sOuMvZ2QR8F-0wrLCo9M2wHZbPtjD7fmicxaqdpgwSqQ2uvdtLvK0Hxd3jikDYQjQ-CBZtG3Txi5o7vov5B2cOZRogXiIuBvBzJfHDJiJXva3m4Lo6Ku6oYGySd1hQ5xdd27dRI',
+            [
+              'Known For: Wonder Woman, Star Trek, Into the Woods',
+              'Birthdate: August 26, 1980',
+              'Nationality: American',
+              'Bio: Plays Steve Trevor, a courageous pilot and Diana\'s ally.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Connie Nielsen -->
+      <tr>
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP025-3gB8UtAl-pLN-FiM8CBjaMixbxnEMSoMg6xAxZEa6SRkb-63zibGjWcWY93MJu2qlbh9oJ3-mDDDk3MNWw1Mn9KeCG9n7Pcgw9GFnQ" alt="Connie Nielsen"></td>
+        <td>Connie Nielsen</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Connie Nielsen',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP025-3gB8UtAl-pLN-FiM8CBjaMixbxnEMSoMg6xAxZEa6SRkb-63zibGjWcWY93MJu2qlbh9oJ3-mDDDk3MNWw1Mn9KeCG9n7Pcgw9GFnQ',
+            [
+              'Known For: Wonder Woman, Gladiator, The Devil\'s Advocate',
+              'Birthdate: July 3, 1965',
+              'Nationality: Danish',
+              'Bio: Plays Hippolyta, Queen of the Amazons and Diana\'s mother.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Robin Wright -->
+      <tr>
+        <td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPh0-2LNeHgZdPNm2yh9jf5kl5t552o55X37VLkgqu2bY551oPT6lpE-TVi1kDkaVtzFOnsRNEVLkEMUhdC9CkxAq37f2vPIGsnB2cARv9" alt="Robin Wright"></td>
+        <td>Robin Wright</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Robin Wright',
+            'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPh0-2LNeHgZdPNm2yh9jf5kl5t552o55X37VLkgqu2bY551oPT6lpE-TVi1kDkaVtzFOnsRNEVLkEMUhdC9CkxAq37f2vPIGsnB2cARv9',
+            [
+              'Known For: Wonder Woman, House of Cards, The Princess Bride',
+              'Birthdate: April 8, 1966',
+              'Nationality: American',
+              'Bio: Plays General Antiope, Diana\'s aunt and mentor in battle.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+    </table>
+</section>
+
+<hr>
+</div>
+
+<!-- Modal -->
+<div id="actorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('actorModal').style.display='none'">&times;</span>
+    <img id="actorImg" class="actor-modal-img" src="" alt="">
+    <div id="actorName" class="actor-modal-name"></div>
+    <div id="actorWorks" class="actor-modal-works"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 CineVerse | Designed Hotstar-style</p>
+</footer>
+
+<script>
+function showActor(name, img, infoLines) {
+    const modal = document.getElementById('actorModal');
+    document.getElementById('actorName').innerText = name;
+    document.getElementById('actorImg').src = img;
+
+    const html = infoLines.map(line => `<span>${line}</span>`).join('');
+    document.getElementById('actorWorks').innerHTML = html;
+
+    modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById('actorModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+
+</body>
+</html>

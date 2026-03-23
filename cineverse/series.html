@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineVerse - Series</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="movie/style.css">
+  <link rel="icon" type="image/jpg" href="1.jpg">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="series.html">Series</a>
+      <a href="anime.html">Anime</a>
+      <a href="kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+
+  <!-- Series Grid -->
+  <section class="section">
+    <div class="section-header">
+      <h2>All Series</h2>
+    </div>
+    <div class="cards">
+      <div class="card"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/6e04e4104134375.5f5c010ef323a.jpg"><h3>Breaking Bad</h3><p>⭐ 9.5 | Crime</p><p class="desc">A teacher turns to crime after diagnosis.</p><a href="series/breakingbad.html" class="view-btn">View</a></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/4e/f7/ac/4ef7acad284e02a0243f29dd80f7d868.jpg"><h3>Stranger Things</h3><p>⭐ 8.7 | Sci-Fi</p><p class="desc">Kids uncover supernatural forces.</p><a href="series/strangerthings.html" class="view-btn">View</a></div>
+      <div class="card"><img src="https://preview.redd.it/official-poster-for-the-witcher-season-4-v0-mvk3oqgia1pf1.jpeg?width=640&crop=smart&auto=webp&s=702c18164bc7fbe0cc78bae7d48f89dc346216df">
+        <h3>The Witcher</h3><p>⭐ 8.2 | Fantasy</p><p class="desc">Geralt hunts monsters in a magical world.</p><a href="series/witcher.html" class="view-btn">View</a></div>
+      <div class="card"><img src="https://posterwa.com/cdn/shop/products/PB5.jpg?v=1682618708"><h3>Peaky Blinders</h3><p>⭐ 8.8 | Crime</p><p class="desc">Gangster family in 1919 Birmingham.</p><a href="series/peakyblinder.html" class="view-btn">View</a></div>
+      <div class="card"><img src="https://image.tmdb.org/t/p/original/lU6TnIwgDEs0yJMnAzI3M2yTMLw.jpg"><h3>Money Heist</h3><p>⭐ 8.4 | Thriller</p><p class="desc">Mastermind heist on Spain’s Royal Mint.</p><a href="series/moneyheist.html" class="view-btn">View</a></div>
+      <div class="card"><img src="https://images-cdn.ubuy.co.in/67e973136ebe2eb2a20ffb5e-the-boys-movie-poster-tv-series-quality.jpg"><h3>The Boys</h3><p>⭐ 8.7 | Action</p><p class="desc">Vigilantes vs corrupt superheroes.</p><a href="series/theboys.html" class="view-btn">View</a></div>
+      <div class="card"><img src="https://m.media-amazon.com/images/I/51A7EGmxK-L.jpg"><h3>Game of Thrones</h3><p>⭐ 9.2 | Fantasy</p><p class="desc">Seven kingdoms fight for the throne.</p><a href="series/got.html" class="view-btn">View</a></div>
+ </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CineVerse | Designed Hotstar-style</p>
+  </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincenzo - CineVerse</title>
+    <link rel="icon" type="image/jpeg" href="../1.jpg">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ott-box {
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .ott-box:hover {
+            transform: scale(1.05);
+        }
+       
+        .ott-box span {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ccc;
+            margin-left: 10px;
+        }
+        .actor-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.actor-modal-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.actor-modal-works span {
+    display: block;
+    margin-bottom: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">CineVerse</div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav-menu">
+            <a href="../index.html">Home</a>
+            <a href="../movies.html">Movies</a>
+            <a href="../series.html">Series</a>
+            <a href="../anime.html">Anime</a>
+            <a href="../kdrama.html">K-Drama</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Series Title -->
+        <div class="movie-title"><h4>Vincenzo</h4></div>
+
+        <!-- Series Info -->
+        <div class="movie-info">
+            <div class="info-box"><span>Release Date: February 20, 2021</span></div>
+            <div class="info-box"><span>Duration: per episodes, 80m each</span></div>
+            <div class="info-box"><span>Director: Kim Hee-won</span></div>
+            <div class="info-box"><span>Writer: Park Jae-bum</span></div>
+                  <div class="info-box"><span>Total Episodes: 20</span></div>
+      <div class="info-box"><span>Total season: 1</span></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="left-column">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/_J8tYxYB_YU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <!-- Mobile responsive wrapper -->
+                    <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/_J8tYxYB_YU" allowfullscreen></iframe>
+                    </div> 
+            </div>
+
+            <div class="right-column">
+                <img src="https://image.tmdb.org/t/p/original/fT7C1pt8eosHqATOGb8MnWQ5zHG.jpg" alt="Vincenzo Poster">
+            </div>
+        </div>
+
+        <!-- Genres -->
+        <div class="genres">
+            <button>Crime</button>
+            <button>Comedy</button>
+            <button>Drama</button>
+            <button>Romance</button>
+        </div>
+
+        <hr>
+
+        <!-- Description -->
+        <div class="description">
+            <p><strong>⭐ Rating:</strong> 8.4 / 10</p>
+            <p><strong>Description:</strong> Vincenzo Cassano, a Korean-Italian mafia lawyer, returns to South Korea to recover hidden gold. He teams up with lawyer Hong Cha-young to take down a corrupt conglomerate, Babel Group, using his mafia tactics and legal expertise. This fast-paced K-drama blends dark comedy, thrilling action, and romance, delivering a rollercoaster of emotions with a focus on justice and revenge.</p>
+        </div>
+
+        <!-- Streaming Section -->
+        <div class="streaming">
+            <h3>Streaming On:</h3>
+             <div class="ott-box">
+                <img class="ott-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+             </div>
+        </div>
+
+        <hr>
+
+        <!-- Actors Section -->
+        <section class="actors">
+            <h3>Main Cast</h3>
+            <table class="actor-table">
+                <tr>
+                    <th>Actor</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+                <!-- Song Joong-ki -->
+                <tr>
+                    <td><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv3OA3mdumgUW_hVQyEMxCu_ON6wVQJAQeRPNGhO9L5roWbifHzUfi8z1KhnFs_TNhGzlW3yzS3GHtpU7ETOGh9C9TeC4dEX6yKoFcfOJvlA" alt="Song Joong-ki"></td>
+                    <td>Song Joong-ki</td>
+                    <td>
+                        <button class="genres-btn" onclick="showActor(
+                            'Song Joong-ki', 
+                            'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv3OA3mdumgUW_hVQyEMxCu_ON6wVQJAQeRPNGhO9L5roWbifHzUfi8z1KhnFs_TNhGzlW3yzS3GHtpU7ETOGh9C9TeC4dEX6yKoFcfOJvlA', 
+                            [
+                                'Known For: Vincenzo, Descendants of the Sun, Arthdal Chronicles',
+                                'Birthdate: September 19, 1985',
+                                'Nationality: South Korean',
+                                'Awards: Baeksang Arts Award for Best Actor',
+                                'Bio: Song Joong-ki is a South Korean actor known for his versatile roles in K-dramas and films.'
+                            ]
+                        )">View Info</button>
+                    </td>
+                </tr>
+                <!-- Jeon Yeo-been -->
+                <tr>
+                    <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QEeRXhpZgAASUkqAAgAAAADAA4BAgDTAAAAMgAAAJiCAgARAAAABQEAABIBAwABAAAAAQAAAAAAAABJTkNIRU9OLCBTT1VUSCBLT1JFQSAtIE1BWSAyMDogU291dGggS29yZWFuIGFjdHJlc3MgSmVvbiBZZW8tQmVlbiBha2EgSmVvbiBZZW8tQmluIGlzIHNlZW4gb24gZGVwYXJ0dXJlIGF0IEluY2hlb24gSW50ZXJuYXRpb25hbCBBaXJwb3J0IG9uIE1heSAyMCwgMjAyMyBpbiBJbmNoZW9uLCBTb3V0aCBLb3JlYS4gKFBob3RvIGJ5IEhhbiBNeXVuZy1HdS9XaXJlSW1hZ2UpMjAyMyBIYW4gTXl1bmctR3X/7QEqUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAQ0cAlAADEhhbiBNeXVuZy1HdRwCeADTSU5DSEVPTiwgU09VVEggS09SRUEgLSBNQVkgMjA6IFNvdXRoIEtvcmVhbiBhY3RyZXNzIEplb24gWWVvLUJlZW4gYWthIEplb24gWWVvLUJpbiBpcyBzZWVuIG9uIGRlcGFydHVyZSBhdCBJbmNoZW9uIEludGVybmF0aW9uYWwgQWlycG9ydCBvbiBNYXkgMjAsIDIwMjMgaW4gSW5jaGVvbiwgU291dGggS29yZWEuIChQaG90byBieSBIYW4gTXl1bmctR3UvV2lyZUltYWdlKRwCdAARMjAyMyBIYW4gTXl1bmctR3UcAm4ACVdpcmVJbWFnZQD/4QXpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj4KCTxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CgkJPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczpJcHRjNHhtcENvcmU9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBDb3JlLzEuMC94bWxucy8iICAgeG1sbnM6R2V0dHlJbWFnZXNHSUZUPSJodHRwOi8veG1wLmdldHR5aW1hZ2VzLmNvbS9naWZ0LzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4wLyIgIHhtbG5zOmlwdGNFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnhtcFJpZ2h0cz0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3JpZ2h0cy8iIGRjOlJpZ2h0cz0iMjAyMyBIYW4gTXl1bmctR3UiIHBob3Rvc2hvcDpDcmVkaXQ9IldpcmVJbWFnZSIgR2V0dHlJbWFnZXNHSUZUOkFzc2V0SUQ9IjE0OTE2OTk0OTYiIHhtcFJpZ2h0czpXZWJTdGF0ZW1lbnQ9Imh0dHBzOi8vd3d3LmdldHR5aW1hZ2VzLmNvbS9ldWxhP3V0bV9tZWRpdW09b3JnYW5pYyZhbXA7dXRtX3NvdXJjZT1nb29nbGUmYW1wO3V0bV9jYW1wYWlnbj1pcHRjdXJsIiA+CjxkYzpjcmVhdG9yPjxyZGY6U2VxPjxyZGY6bGk+SGFuIE15dW5nLUd1PC9yZGY6bGk+PC9yZGY6U2VxPjwvZGM6Y3JlYXRvcj48ZGM6ZGVzY3JpcHRpb24+PHJkZjpBbHQ+PHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5JTkNIRU9OLCBTT1VUSCBLT1JFQSAtIE1BWSAyMDogU291dGggS29yZWFuIGFjdHJlc3MgSmVvbiBZZW8tQmVlbiBha2EgSmVvbiBZZW8tQmluIGlzIHNlZW4gb24gZGVwYXJ0dXJlIGF0IEluY2hlb24gSW50ZXJuYXRpb25hbCBBaXJwb3J0IG9uIE1heSAyMCwgMjAyMyBpbiBJbmNoZW9uLCBTb3V0aCBLb3JlYS4gKFBob3RvIGJ5IEhhbiBNeXVuZy1HdS9XaXJlSW1hZ2UpPC9yZGY6bGk+PC9yZGY6QWx0Pjwv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" alt="Jeon Yeo-been"></td>
+                    <td>Jeon Yeo-been</td>
+                    <td>
+                        <button class="genres-btn" onclick="showActor(
+                            'Jeon Yeo-been', 
+                            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QEeRXhpZgAASUkqAAgAAAADAA4BAgDTAAAAMgAAAJiCAgARAAAABQEAABIBAwABAAAAAQAAAAAAAABJTkNIRU9OLCBTT1VUSCBLT1JFQSAtIE1BWSAyMDogU291dGggS29yZWFuIGFjdHJlc3MgSmVvbiBZZW8tQmVlbiBha2EgSmVvbiBZZW8tQmluIGlzIHNlZW4gb24gZGVwYXJ0dXJlIGF0IEluY2hlb24gSW50ZXJuYXRpb25hbCBBaXJwb3J0IG9uIE1heSAyMCwgMjAyMyBpbiBJbmNoZW9uLCBTb3V0aCBLb3JlYS4gKFBob3RvIGJ5IEhhbiBNeXVuZy1HdS9XaXJlSW1hZ2UpMjAyMyBIYW4gTXl1bmctR3X/7QEqUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAQ0cAlAADEhhbiBNeXVuZy1HdRwCeADTSU5DSEVPTiwgU09VVEggS09SRUEgLSBNQVkgMjA6IFNvdXRoIEtvcmVhbiBhY3RyZXNzIEplb24gWWVvLUJlZW4gYWthIEplb24gWWVvLUJpbiBpcyBzZWVuIG9uIGRlcGFydHVyZSBhdCBJbmNoZW9uIEludGVybmF0aW9uYWwgQWlycG9ydCBvbiBNYXkgMjAsIDIwMjMgaW4gSW5jaGVvbiwgU291dGggS29yZWEuIChQaG90byBieSBIYW4gTXl1bmctR3UvV2lyZUltYWdlKRwCdAARMjAyMyBIYW4gTXl1bmctR3UcAm4ACVdpcmVJbWFnZQD/4QXpaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pgo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj4KCTxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CgkJPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczpJcHRjNHhtcENvcmU9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBDb3JlLzEuMC94bWxucy8iICAgeG1sbnM6R2V0dHlJbWFnZXNHSUZUPSJodHRwOi8veG1wLmdldHR5aW1hZ2VzLmNvbS9naWZ0LzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGx1cz0iaHR0cDovL25zLnVzZXBsdXMub3JnL2xkZi94bXAvMS4wLyIgIHhtbG5zOmlwdGNFeHQ9Imh0dHA6Ly9pcHRjLm9yZy9zdGQvSXB0YzR4bXBFeHQvMjAwOC0wMi0yOS8iIHhtbG5zOnhtcFJpZ2h0cz0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3JpZ2h0cy8iIGRjOlJpZ2h0cz0iMjAyMyBIYW4gTXl1bmctR3UiIHBob3Rvc2hvcDpDcmVkaXQ9IldpcmVJbWFnZSIgR2V0dHlJbWFnZXNHSUZUOkFzc2V0SUQ9IjE0OTE2OTk0OTYiIHhtcFJpZ2h0czpXZWJTdGF0ZW1lbnQ9Imh0dHBzOi8vd3d3LmdldHR5aW1hZ2VzLmNvbS9ldWxhP3V0bV9tZWRpdW09b3JnYW5pYyZhbXA7dXRtX3NvdXJjZT1nb29nbGUmYW1wO3V0bV9jYW1wYWlnbj1pcHRjdXJsIiA+CjxkYzpjcmVhdG9yPjxyZGY6U2VxPjxyZGY6bGk+SGFuIE15dW5nLUd1PC9yZGY6bGk+PC9yZGY6U2VxPjwvZGM6Y3JlYXRvcj48ZGM6ZGVzY3JpcHRpb24+PHJkZjpBbHQ+PHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5JTkNIRU9OLCBTT1VUSCBLT1JFQSAtIE1BWSAyMDogU291dGggS29yZWFuIGFjdHJlc3MgSmVvbiBZZW8tQmVlbiBha2EgSmVvbiBZZW8tQmluIGlzIHNlZW4gb24gZGVwYXJ0dXJlIGF0IEluY2hlb24gSW50ZXJuYXRpb25hbCBBaXJwb3J0IG9uIE1heSAyMCwgMjAyMyBpbiBJbmNoZW9uLCBTb3V0aCBLb3JlYS4gKFBob3RvIGJ5IEhhbiBNeXVuZy1HdS9XaXJlSW1hZ2UpPC9yZGY6bGk+PC9yZGY6QWx0Pjwv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', 
+                            [
+                                'Known For: Vincenzo, Be Melodramatic, After My Death',
+                                'Birthdate: July 26, 1989',
+                                'Nationality: South Korean',
+                                'Awards: Busan Film Critics Award',
+                                'Bio: Jeon Yeo-been is a South Korean actress recognized for her dynamic performances.'
+                            ]
+                        )">View Info</button>
+                    </td>
+                </tr>
+                <!-- Ok Taec-yeon -->
+                <tr>
+                    <td><img src="data:image/jpeg;base64,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" alt="Ok Taec-yeon"></td>
+                    <td>Ok Taec-yeon</td>
+                    <td>
+                        <button class="genres-btn" onclick="showActor(
+                            'Ok Taec-yeon', 
+                            'data:image/jpeg;base64,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', 
+                            [
+                                'Known For: Vincenzo, Dream High, Save Me',
+                                'Birthdate: December 27, 1988',
+                                'Nationality: South Korean',
+                                'Bio: Ok Taec-yeon is a South Korean actor and singer, member of the K-pop group 2PM.'
+                            ]
+                        )">View Info</button>
+                    </td>
+                </tr>
+                <!-- Kwak Dong-yeon -->
+                <tr>
+                    <td><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QEvRXhpZgAASUkqAAgAAAADAA4BAgDpAAAAMgAAAJiCAgAMAAAAGwEAABIBAwABAAAAAQAAAAAAAABTRU9VTCwgU09VVEggS09SRUEgLSBKVUxZIDI2OiBBY3RvciBLd2FrIERvbmctWWVvbiBhdHRlbmRzIHRoZSBwcmVzcyBjb25mZXJlbmNlIGZvciBKVEJDIERyYW1hICdHYW5nbmFtIEJlYXV0eScgYXQgVGltZSBTcXVhcmUgQW1vcmlzIEhhbGwgb24gSnVseSAyNiwgMjAxOCBpbiBTZW91bCwgU291dGggS29yZWEuIChQaG90byBieSBUaGUgQ2hvc3VuaWxibyBKTlMvSW1hemlucyB2aWEgR2V0dHkgSW1hZ2VzKTIwMjAgSW1hemluc//tAVBQaG90b3Nob3AgMy4wADhCSU0EBAAAAAABMxwCUAASVGhlIENob3N1bmlsYm8gSk5THAJ4AOlTRU9VTCwgU09VVEggS09SRUEgLSBKVUxZIDI2OiBBY3RvciBLd2FrIERvbmctWWVvbiBhdHRlbmRzIHRoZSBwcmVzcyBjb25mZXJlbmNlIGZvciBKVEJDIERyYW1hICdHYW5nbmFtIEJlYXV0eScgYXQgVGltZSBTcXVhcmUgQW1vcmlzIEhhbGwgb24gSnVseSAyNiwgMjAxOCBpbiBTZW91bCwgU291dGggS29yZWEuIChQaG90byBieSBUaGUgQ2hvc3VuaWxibyBKTlMvSW1hemlucyB2aWEgR2V0dHkgSW1hZ2VzKRwCdAAMMjAyMCBJbWF6aW5zHAJuABhJbWFaaW5zIHZpYSBHZXR0eSBJbWFnZXMA/+EGGWh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+Cgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgoJCTxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiAgIHhtbG5zOkdldHR5SW1hZ2VzR0lGVD0iaHR0cDovL3htcC5nZXR0eWltYWdlcy5jb20vZ2lmdC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIiB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIiBkYzpSaWdodHM9IjIwMjAgSW1hemlucyIgcGhvdG9zaG9wOkNyZWRpdD0iSW1hWmlucyB2aWEgR2V0dHkgSW1hZ2VzIiBHZXR0eUltYWdlc0dJRlQ6QXNzZXRJRD0iMTI4MDI4MTQ3NSIgeG1wUmlnaHRzOldlYlN0YXRlbWVudD0iaHR0cHM6Ly93d3cuZ2V0dHlpbWFnZXMuY29tL2V1bGE/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZhbXA7dXRtX2NhbXBhaWduPWlwdGN1cmwiID4KPGRjOmNyZWF0b3I+PHJkZjpTZXE+PHJkZjpsaT5UaGUgQ2hvc3VuaWxibyBKTlM8L3JkZjpsaT48L3JkZjpTZXE+PC9kYzpjcmVhdG9yPjxkYzpkZXNjcmlwdGlvbj48cmRmOkFsdD48cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPlNFT1VMLCBTT1VUSCBLT1JFQSAtIEpVTFkgMjY6IEFjdG9yIEt3YWsgRG9uZy1ZZW9uIGF0dGVuZHMgdGhlIHByZXNzIGNvbmZlcmVuY2UgZm9yIEpUQkMgRHJhbWEgJmFwb3M7R2FuZ25hbSBCZWF1dHkmYXBvczsgYXQgVGltZSBTcXVhcmUgQW1vcmlzIEhhbGwgb24gSnVseSAyNiwgMjAxOCBpbiBTZW91bCwgU291dGggS29yZWEuIChQaG90byBieSBUaGUgQ2hvc3VuaWxibyBKTlMvSW1hemlucyB2aWEgR2V0dHkgSW1hZ2VzKTwvcmRmOmxpPjwvcmRmOkFsdD48L2RjOmRlc2NyaXB0aW9uPgo8cGx1czpMaWNlbnNvcj48cmRmOlNlcT48cmRmOmxpIHJkZjpwYXJzZVR5cGU9J1Jlc291cmNlJz48cGx1czpMaWNlbnNvclVSTD5odHRwczovL3d3dy5nZXR0eWltYWdlcy5jb20vZGV0YWlsLzEyODAyODE0NzU/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZhbXA7dXRtX2NhbXBhaWduPWlwdGN1cmw8L3BsdXM6TGljZW5zb3JVUkw+PC9yZGY6bGk+PC9yZGY6U2VxPjwvcGx1czpMaWNlbnNvcj4KCQk8L3JkZjpEZXNjcmlwdGlvbj4KCTwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InciPz4K/9sAhAAJBgcIBwYJCAcICgoJCw0WDw0MDA0bFBUQFiAdIiIgHR8fJCg0LCQmMScfHy09LTE1Nzo6OiMrP0Q/OEM0OTo3AQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAB4AHgDASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAABAACAwUGAQcI/8QANhAAAgEDAwIEAwcEAQUAAAAAAQIDAAQRBRIhMUEGEyJRI2FxBxQyQoGRoTNSseHBFSXR8PH/xAAZAQACAwEAAAAAAAAAAAAAAAACAwABBAX/xAAjEQACAgICAQUBAQAAAAAAAAAAAQIRAzESIQQTIkFRYTIU/9oADAMBAAIRAxEAPwD09pFU4NLzVxmmSRKuWb9K5bRgglhxT+MasG3dDxcJnFd+8c8DioREJJDgUm9Hpx1o1CIHKQR5wJwKlY4xQLzQwENM4Rf7mOAKwn2heOoYYm07SpEeTcVklwGUcdh0PJ+mR3pc0ohwuR6IbmErmOaNscHDg4qKW4aNC7MNo75r5muWke5+9SSM034t+eR+tMn1vVZcpNqN06bduDKxGPahjP8AAnH9Pdr77SNAs2MTTySup5MSbl/fvRFj9oHhq6Vf+4BGY4CtG+c/TFfOPmsWy5LfrR1p6sY9SnqO4oG2Ekj6hsr601CNpLG5jnVThtjZKn2I7H61PivAtH8V3mm3MUit5skOACXw23uPmCK9s0HWItcsI7y2jdUf+4jr3HBqKVluNBso+Gao5R8RvrV/KPQao5h8RvrUka/E+QcilTyKVAbS1uC7SAAcVMpJiwBipSUxnFOBG3I6VpcukqOEl3sjt4yiknqahuUdn4GaL3jFddlUZIq4yalZTiuNHmn2heKZtHZtMtFAuJoN7S4/AhJHHueDXkAdXmUvwq846k1pPHV5NqHifU3kOY453gjcHO4Kxz+3THyrNqERiCenelTk5PsZGKS6JGbeuAOWOST9aDlUEkAd6NUhpYgOEDA+rvj/AIqSGy8xmVQScgcdzml3QVWBx6dLNGTChcjnAHNctkKSbGyrdu1e8aPo9mtrE8MEYDRgllUZPHesF4+8PraXyXUKYEnB2joR3/8AfagWS3Qx4qVmOIaUgZyw5znmtZ9nWuXdjrCWUF+lrDcON6TJvRj+4wcZ5zWRuY/UCy8Nz170oB5Lb3AYLg4YdaMBH1K+DHkdxVHOPit9ad4N1CHVfDFpdwxrGWTbIqgDDDg9K7cf1Wono1eLtg5FKnGlQG0t8Aw9e9d3fCwKeIfTinpGFFaeSOFTIVJwM1PIoKAt0FdKA9qeR6ajkTifK2pXO7Vb1iCsb3Ujhc8gFycVDKfKmI4bnr2rRfaBoEmheI5VPMMzGWJh3BPP7E/4rvgfw/BrN1I14zGGLHoU43E+/wC1Ik67HRTbozsaNK6s4Ajz6m7fStX4csFu5lbzo49rAqjEAv3Ix/H6VvbnS9E00LNdWkWxF2xoVyAPYL70DqV7oUNxa2U2iNHLcJ5iFYQPTzzxz2PGKS5WhyhxZsdFs5LaxSKX0leB9O1ZP7S3tpNOa1WdRcghlUdTWn0ri0aJGITblAfbtVb8HDyrZLNc+U0pL4HAzgD3JxQKrGNdHiT29zI6IUbzMYXP5vpQ2WBC7jz1B7V6rp+qvrZ2XWmmDPqRWGcfX2rLrodvJ49t7OQBLaSVXfPTHUj9SMfrToyt0IlClaPWPs1sZLDwbZpNw0u6XHsGPH8Yo+5HxWq2hAEQVQAoGAB0Aqruh8U0yWh3i/0wc0q6a7QG4vhXaaKdTTinRSbpXRSxkVCGQ8XaVBrMkFrd28ckRDeps5XPHB7VjPCum/8AQ9d1CwDFkUIys3UjmvT9RgziRQSyHOB3HesrqscZkgvYUwy+iQ56g/7rNktNmvHxcE1tF2LSG+jXzUVsdMjpUo0eA7N67gnIz2qHT5fQuOlWwcNET3paDtlduRJwijBqvg2m7uLSQegnco9qdctqCXh+6wJtDFmkZuo9h86Ft5L7/q7SXkSqoP5fbH/n5VQQc1lFCjlVAJHXFZqx0rzvEbXgUMMJEOOQdzE/xitPfzDyW2ntQnha3Z7mS4YnYren2LYx/ijgrYEpJdmsiXCVV3f9Y1cD8NVF5/VNaZaB8X+mDGu0jSoDeXgp1Bfe196d98WmnJ9Kf0G12gRerSN4Kll+hP6JLo1WXNjDcI4PoLg5I7n3om4uNy1Wy3rIcYoZU9jI4Mi0D6exWMK3DDgijzOVQkAtgfhHeqK4vBDdsSMI43Z9j3o61ulkxhgRWNqmNaa6YA2oarPK+II7eMZGJiP89KCe61KO4Qjy50YjO1uB+taqKOBjmTafbNA3/lAttCjHcVfxYfNVxor7iUgEE8HmtDoiiOwt1PB27v35/wCaxl9dhCxA3EcY7CtZaSNjI6dqZi6AeJ5NGgDAL1qsu1LSZUZqM3D+9WNsA6ZI5rRsHi8HuKoxSH8ppVdbF9qVVxK/1v6KAHNdzTFp9Cbhwp3NMBp4NQh2oZoVYZxUtLqKhZQahHiWI9slf3/+UDPbSW8yPasVLdu1W+sIEg8wkDa64+ZJoeUb0RwPwkGkZFTM+SnIiFxf7NpjU/Pdih2a5bKO6jPtyauCyvEML6qD8gmXpQdi6RXT2o8hjjCjp8zWm01t9lA/90an+K5Y6Ob5gZQVtU69t3yFWc9uEdtigKF4A7Y6U7FB02RZ1CVApq3tD8IVTk5FWtn/AEhToheV3BBJNKuUqI55nVp+aiWnqCxwBSzsjs08GuGFwMkU0GoRNPQ/NKm5qSOJnZR0yf4qFTmoK2R3Onrf27W8jbDIAyPjO0g8H6cYqse0mtWME6lXA6dQfmPcVpp02yhlHAwv7D/dVOteK9BstRtNHvnMl3MwGU6W+RwXb8ueOOeuTxVyx8lZzfWfNt/JDb4KYxzVxpml+aPNnGIz0Hdv9VV6prOg6EGlvdRgd0Gfu6EO5I7YXk/rge9O8F+PIfFReIaXd2siDmQL5kP03gcH5EUEMXfuJPL17TV7FVQqgKAMADtQd1GAh9yKM4bBBz9KEuH3OfYcCnSdITHYCkClMMuafDIICVYHbnqKkciNSxBwPYZqNlZzuZQoI6d6CxluqClZWGVII+VKgQGjOVJBpUXIDiRQ2uIySOaZbIRcHI4pUqhpjkk1KyylUGPAFVZt3yTSpVbAxZJQTomjtSgDMNxJ6dhRIUIeOtcpUAMpuTtk8sUjpmPqffoKx/izwLo0uk6lqDWojvkglmE0bMqs4UtlhnHJ6mu0qatCb7PKvCehSeJNfttNiOyM/EnkX8sY64+fIA+tfRVtZw2VrDYWMSw28KBFReAqilSqlokh/lpbIfL9PyHShTXaVBPYUdATrfxPmOSG4jLE7ZRsZR7BgCDj6frU0T72cAelTjPz70qVCEOZaVKlVFn/2Q==" alt="Kwak Dong-yeon"></td>
+                    <td>Kwak Dong-yeon</td>
+                    <td>
+                        <button class="genres-btn" onclick="showActor(
+                            'Kwak Dong-yeon', 
+                            'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QEvRXhpZgAASUkqAAgAAAADAA4BAgDpAAAAMgAAAJiCAgAMAAAAGwEAABIBAwABAAAAAQAAAAAAAABTRU9VTCwgU09VVEggS09SRUEgLSBKVUxZIDI2OiBBY3RvciBLd2FrIERvbmctWWVvbiBhdHRlbmRzIHRoZSBwcmVzcyBjb25mZXJlbmNlIGZvciBKVEJDIERyYW1hICdHYW5nbmFtIEJlYXV0eScgYXQgVGltZSBTcXVhcmUgQW1vcmlzIEhhbGwgb24gSnVseSAyNiwgMjAxOCBpbiBTZW91bCwgU291dGggS29yZWEuIChQaG90byBieSBUaGUgQ2hvc3VuaWxibyBKTlMvSW1hemlucyB2aWEgR2V0dHkgSW1hZ2VzKTIwMjAgSW1hemluc//tAVBQaG90b3Nob3AgMy4wADhCSU0EBAAAAAABMxwCUAASVGhlIENob3N1bmlsYm8gSk5THAJ4AOlTRU9VTCwgU09VVEggS09SRUEgLSBKVUxZIDI2OiBBY3RvciBLd2FrIERvbmctWWVvbiBhdHRlbmRzIHRoZSBwcmVzcyBjb25mZXJlbmNlIGZvciBKVEJDIERyYW1hICdHYW5nbmFtIEJlYXV0eScgYXQgVGltZSBTcXVhcmUgQW1vcmlzIEhhbGwgb24gSnVseSAyNiwgMjAxOCBpbiBTZW91bCwgU291dGggS29yZWEuIChQaG90byBieSBUaGUgQ2hvc3VuaWxibyBKTlMvSW1hemlucyB2aWEgR2V0dHkgSW1hZ2VzKRwCdAAMMjAyMCBJbWF6aW5zHAJuABhJbWFaaW5zIHZpYSBHZXR0eSBJbWFnZXMA/+EGGWh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+Cgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgoJCTxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiAgIHhtbG5zOkdldHR5SW1hZ2VzR0lGVD0iaHR0cDovL3htcC5nZXR0eWltYWdlcy5jb20vZ2lmdC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIiB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIiBkYzpSaWdodHM9IjIwMjAgSW1hemlucyIgcGhvdG9zaG9wOkNyZWRpdD0iSW1hWmlucyB2aWEgR2V0dHkgSW1hZ2VzIiBHZXR0eUltYWdlc0dJRlQ6QXNzZXRJRD0iMTI4MDI4MTQ3NSIgeG1wUmlnaHRzOldlYlN0YXRlbWVudD0iaHR0cHM6Ly93d3cuZ2V0dHlpbWFnZXMuY29tL2V1bGE/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZhbXA7dXRtX2NhbXBhaWduPWlwdGN1cmwiID4KPGRjOmNyZWF0b3I+PHJkZjpTZXE+PHJkZjpsaT5UaGUgQ2hvc3VuaWxibyBKTlM8L3JkZjpsaT48L3JkZjpTZXE+PC9kYzpjcmVhdG9yPjxkYzpkZXNjcmlwdGlvbj48cmRmOkFsdD48cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPlNFT1VMLCBTT1VUSCBLT1JFQSAtIEpVTFkgMjY6IEFjdG9yIEt3YWsgRG9uZy1ZZW9uIGF0dGVuZHMgdGhlIHByZXNzIGNvbmZlcmVuY2UgZm9yIEpUQkMgRHJhbWEgJmFwb3M7R2FuZ25hbSBCZWF1dHkmYXBvczsgYXQgVGltZSBTcXVhcmUgQW1vcmlzIEhhbGwgb24gSnVseSAyNiwg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', 
+                            [
+                                'Known For: Vincenzo, Love in the Moonlight, It’s Okay to Not Be Okay',
+                                'Birthdate: March 19, 1997',
+                                'Nationality: South Korean',
+                                'Bio: Kwak Dong-yeon is a South Korean actor known for his supporting roles in popular K-dramas.'
+                            ]
+                        )">View Info</button>
+                    </td>
+                </tr>
+                <!-- Kim Yeo-jin -->
+                <tr>
+                    <td><img src="data:image/jpeg;base64,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" alt="Kim Yeo-jin"></td>
+                    <td>Kim Yeo-jin</td>
+                    <td>
+                        <button class="genres-btn" onclick="showActor(
+                            'Kim Yeo-jin', 
+                            'data:image/jpeg;base64,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', 
+                            [
+                                'Known For: Vincenzo, Extracurricular, Rookie Historian Goo Hae-ryung',
+                                'Birthdate: June 24, 1972',
+                                'Nationality: South Korean',
+                                'Bio: Kim Yeo-jin is a South Korean actress known for her impactful supporting roles.'
+                            ]
+                        )">View Info</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+    </div>
+
+    <!-- Modal -->
+    <div id="actorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('actorModal').style.display='none'">&times;</span>
+            <img id="actorImg" class="actor-modal-img" src="" alt="">
+            <div id="actorName" class="actor-modal-name"></div>
+            <div id="actorWorks" class="actor-modal-works"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 CineVerse | Designed Hotstar-style</p>
+    </footer>
+
+    <script>
+        function showActor(name, img, infoLines) {
+            const modal = document.getElementById('actorModal');
+            document.getElementById('actorName').innerText = name;
+            document.getElementById('actorImg').src = img;
+            const html = infoLines.map(line => `<span>${line}</span>`).join('');
+            document.getElementById('actorWorks').innerHTML = html;
+            modal.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('actorModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', () => {
+                    menuToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    console.log('Menu toggled:', navMenu.classList.contains('active'));
+                });
+            } else {
+                console.error('Menu toggle or nav menu not found');
+            }
+        });
+    </script>
+</body>
+</html>

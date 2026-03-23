@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spider-Man: No Way Home - CineVerse</title>
+<link rel="icon" type="image/jpeg" href="../1.jpg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.ott-box {
+    display: inline-block;   /* Only wraps the image */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ott-box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.ott-box img.ott-logo {
+    width: 180px;           /* Rectangle width */
+    height: 60px;           /* Rectangle height */
+    object-fit: cover;      /* Fill the rectangle fully */
+    display: block;
+    background-color: transparent; /* Ensure transparent background */
+}
+
+
+.ott-box span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ccc;
+    margin-left: 10px;
+}
+.actor-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.actor-modal-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.actor-modal-works span {
+    display: block;
+    margin-bottom: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">CineVerse</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav-menu">
+      <a href="../index.html">Home</a>
+      <a href="../movies.html">Movies</a>
+      <a href="../series.html">Series</a>
+      <a href="../anime.html">Anime</a>
+      <a href="../kdrama.html">K-Drama</a>
+    </nav>
+  </header>
+
+<div class="container">
+
+  <!-- Movie Title -->
+  <div class="movie-title"><h4>Spider-Man: No Way Home</h4></div>
+
+  <!-- Movie Info -->
+  <div class="movie-info">
+    <div class="info-box"><span>Release Date: December 17, 2021</span></div>
+    <div class="info-box"><span>Duration: 2h 28m</span></div>
+      <div class="info-box"><span>Director: Jon Watts</span></div>
+    <div class="info-box"><span>Producer: Kevin Feige, Amy Pascal</span></div>
+    
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="left-column">
+      <iframe src="https://www.youtube.com/embed/JfVOs4VSpmA" allowfullscreen></iframe>
+              <!-- Mobile responsive wrapper -->
+    <div class="video-responsive">
+      <iframe src="https://www.youtube.com/embed/JfVOs4VSpmA" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="right-column">
+      <img src="img/spiderman/5.jpeg" alt="Spider-Man Poster">
+    </div>
+  </div>
+  
+
+  <!-- Genres -->
+  <div class="genres">
+    <button>Action</button>
+    <button>Adventure</button>
+    <button>Drama</button>
+    <button>Fantasy</button>
+    <button>Superhero</button>
+  </div>
+
+  <hr>
+
+  <!-- Description -->
+  <div class="description">
+    <p><strong>⭐ Rating:</strong> 8.7 / 10</p>
+    <p><strong>Description:</strong> Peter Parker seeks Doctor Strange's help when his identity as Spider-Man is revealed, leading to multiverse chaos and battles with villains from other dimensions. This film continues the story of Peter Parker, exploring friendship, responsibility, and the challenges of facing enemies from alternate realities. Expect thrilling action sequences, emotional moments, and surprising cameos from previous Spider-Man franchises.</p>
+  </div>
+
+  <!-- Streaming Section -->
+  <div class="streaming">
+    <h3>Streaming On:</h3>
+    <div class="ott-box">
+  <img class="ott-logo" src="img/spiderman/i.png" alt="Disney+ Logo">
+  
+</div>
+
+  </div>
+
+  <hr>
+
+  <!-- Actors Section -->
+  <section class="actors">
+    <h3>Main Cast</h3>
+    <table class="actor-table">
+      <tr>
+        <th>Actor</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+
+      <!-- Tom Holland -->
+      <tr>
+        <td><img src="img/spiderman/1.jpg" alt="Tom Holland"></td>
+        <td>Tom Holland</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Tom Holland', 
+            'img/spiderman/1.jpg', 
+            [
+              'Known For: Spider-Man, Chaos Walking, Uncharted',
+              'Birthdate: June 1, 1996',
+              'Nationality: British',
+              'Awards: BAFTA Rising Star Award',
+              'Bio: Tom Holland is a British actor and dancer, best known for portraying Spider-Man in the Marvel Cinematic Universe.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Zendaya -->
+      <tr>
+        <td><img src="img/spiderman/2.jpeg" alt="Zendaya"></td>
+        <td>Zendaya</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Zendaya', 
+            'img/spiderman/2.jpeg', 
+            [
+              'Known For: Euphoria, Spider-Man, Dune',
+              'Birthdate: September 1, 1996',
+              'Nationality: American',
+              'Awards: Emmy Award for Outstanding Lead Actress',
+              'Bio: Zendaya is an American actress and singer who gained fame for her roles in Disney Channel series and now stars as MJ in the MCU Spider-Man films.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Benedict Cumberbatch -->
+      <tr>
+        <td><img src="img/spiderman/3.jpeg" alt="Benedict Cumberbatch"></td>
+        <td>Benedict Cumberbatch</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Benedict Cumberbatch', 
+            'img/spiderman/3.jpeg', 
+            [
+              'Known For: Doctor Strange, Sherlock, The Imitation Game',
+              'Birthdate: July 19, 1976',
+              'Nationality: British',
+              'Awards: Emmy Awards, BAFTA nominations',
+              'Bio: Cumberbatch portrays Doctor Strange in the MCU. He is acclaimed for his versatile acting and complex characters.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Jacob Batalon -->
+      <tr>
+        <td><img src="img/spiderman/6.jpg" alt="Jacob Batalon"></td>
+        <td>Jacob Batalon</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Jacob Batalon', 
+            'img/spiderman/6.jpg', 
+            [
+              'Known For: Spider-Man, Every Day',
+              'Birthdate: October 9, 1996',
+              'Nationality: American',
+              'Bio: Jacob Batalon plays Ned Leeds, Peter Parker’s best friend in the MCU.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Marisa Tomei -->
+      <tr>
+        <td><img src="img/spiderman/7.jpeg" alt="Marisa Tomei"></td>
+        <td>Marisa Tomei</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Marisa Tomei', 
+            'img/spiderman/7.jpeg', 
+            [
+              'Known For: Spider-Man, My Cousin Vinny',
+              'Birthdate: December 4, 1964',
+              'Nationality: American',
+              'Bio: Marisa Tomei plays Aunt May, Peter Parker’s beloved aunt, bringing warmth and humor to the MCU.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Alfred Molina -->
+      <tr>
+        <td><img src="img/spiderman/8.jpg" alt="Alfred Molina"></td>
+        <td>Alfred Molina</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Alfred Molina', 
+            'img/spiderman/8.jpg', 
+            [
+              'Known For: Spider-Man 2, Frida',
+              'Birthdate: May 24, 1953',
+              'Nationality: British',
+              'Bio: Alfred Molina reprises his role as Doctor Octopus, one of Spider-Man’s classic villains.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Willem Dafoe -->
+      <tr>
+        <td><img src="img/spiderman/9.jpg" alt="Willem Dafoe"></td>
+        <td>Willem Dafoe</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Willem Dafoe', 
+            'img/spiderman/9.jpg', 
+            [
+              'Known For: Spider-Man, The Lighthouse, Platoon',
+              'Birthdate: July 22, 1955',
+              'Nationality: American',
+              'Bio: Willem Dafoe returns as Green Goblin, delivering a chilling performance as one of Spider-Man’s most iconic adversaries.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+      <!-- Jamie Foxx -->
+      <tr>
+        <td><img src="img/spiderman/10.jpg" alt="Jamie Foxx"></td>
+        <td>Jamie Foxx</td>
+        <td>
+          <button class="genres-btn" onclick="showActor(
+            'Jamie Foxx', 
+            'img/spiderman/10.jpg', 
+            [
+              'Known For: Spider-Man, Ray, Django Unchained',
+              'Birthdate: December 13, 1967',
+              'Nationality: American',
+              'Bio: Jamie Foxx reprises his role as Electro, a powerful villain who returns in the multiverse chaos.'
+            ]
+          )">View Info</button>
+        </td>
+      </tr>
+
+    </table>
+</section>
+
+<hr>
+</div>
+
+<!-- Modal -->
+<div id="actorModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('actorModal').style.display='none'">&times;</span>
+    <img id="actorImg" class="actor-modal-img" src="" alt="">
+    <div id="actorName" class="actor-modal-name"></div>
+    <div id="actorWorks" class="actor-modal-works"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 CineVerse | Designed Hotstar-style</p>
+</footer>
+
+<script>
+function showActor(name, img, infoLines) {
+    const modal = document.getElementById('actorModal');
+    document.getElementById('actorName').innerText = name;
+    document.getElementById('actorImg').src = img;
+
+    const html = infoLines.map(line => `<span>${line}</span>`).join('');
+    document.getElementById('actorWorks').innerHTML = html;
+
+    modal.style.display = "block";
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('actorModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      console.log('Menu toggled:', navMenu.classList.contains('active')); // Debugging
+    });
+  } else {
+    console.error('Menu toggle or nav menu not found');
+  }
+});
+  </script>
+
+</body>
+</html>
+
